@@ -1,12 +1,30 @@
-import React from 'react';
-import Clock from './components/Clock.jsx';
+import React, {useState} from 'react';
+import Meteor from './components/Meteor.jsx';
+import Favorites from './components/Favorites.jsx';
+import * as meteorData from "./data.json"
 
 function App(){
+    // console.log(meteorData.default);
+    const [favs, setFavs] = useState([]);    
+    const data = meteorData.default;
+    const callback = (meteorName) => {
+        setFavs([...favs, meteorName]);
+    }
+    const toReturn = data.map((meteor) => {
+        return(
+            <Meteor
+                meteorInfo = {meteor}
+                updateFavs = {callback}
+            />
+        );
+    });
+
     return(
         <div>
-            <h1>Timone Eskaros, this is my app</h1>
-            <p>This is the timone app.</p>
-            <Clock/>
+            <Favorites
+                favorites = {favs}
+            />
+            {toReturn}
         </div>
     );
 };
