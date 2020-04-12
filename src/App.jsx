@@ -4,7 +4,6 @@ import Favorites from './components/Favorites.jsx';
 import * as meteorData from "./data.json"
 
 function App(){
-    // console.log(meteorData.default);
     const [favs, setFavs] = useState([]);    
     const data = meteorData.default;
     const callback = (meteorName) => {
