@@ -1,0 +1,5 @@
+yusufovJ -- 2020-04-13 02:20
+Favorites system was working for a second. Tried to remake it using IDs,
+should have committed beforehand because I ended up breaking the whole 
+thing. Going to remake the whole favorites system tomorrow with a new 
+Favorite component and a "FavBar" component to hold them.
