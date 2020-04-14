@@ -6,7 +6,7 @@ function Favorites(props) {
             <span>
                 <button 
                     className="btn btn-outline-primary"
-                    onClick={() => {props.seeMore(favorite)}}>
+                    onClick={() => {props.seeMore(favorite.meteorInfo)}}>
                         {favorite.meteorInfo.name}
                 </button>
                 <button 

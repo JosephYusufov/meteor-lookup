@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Meteor Lookup Tool
+
+## Working Functionalities
+* Finding more info on Meteors using the `See More` Feature.
+* Adding Meteors to `Favoirtes`
+* Seeing more from the `Favorites` bar
+
+## Bugs
+* Removing from favorites doesn't really work.
 
 ## Available Scripts
 
